@@ -7,3 +7,6 @@ sequence_to_classify = "Добрый день. Возник вопрос по п
 candidate_labels = ["Учетная запись", "РПД", "Учебные планы", "Личный кабинет"]
 output = classifier(sequence_to_classify, candidate_labels, multi_label=False)
 print(output["labels"][0], output["scores"][0])
+
+
+
