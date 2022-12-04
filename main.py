@@ -14,6 +14,4 @@ def classify():
 submit = st.button('Отправить')
 
 if submit:
-    res = classify(text_input)
-
-st.text(res)
+   st.write(classify())
