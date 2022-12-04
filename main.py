@@ -1,6 +1,10 @@
 from transformers import pipeline
-
+import streamlit as st
 classifier = pipeline("zero-shot-classification", model="MoritzLaurer/mDeBERTa-v3-base-mnli-xnli")
+
+
+text_input=st.text_input('Введите текст')
+
 
 def classify(text):
     candidate_labels = ["Учетная запись", "РПД", "Учебные планы", "Личный кабинет"]
