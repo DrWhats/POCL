@@ -1,6 +1,6 @@
 from transformers import pipeline
 import streamlit as st
-import pytest
+# import pytest
 classifier = pipeline("zero-shot-classification", model="MoritzLaurer/mDeBERTa-v3-base-mnli-xnli")
 
 
@@ -18,9 +18,9 @@ submit = st.button('Отправить')
 if submit:
    st.write(classify())
 
-def test_classify():
-    assert classify("Добрый день! Не могу войти в свой аккаунт. Что делать?") == ('Учетная запись', 0.7550224661827087)
-
-
-#Добрый день! Не могу войти в свой аккаунт. Что делать?
-#('Учетная запись', 0.7550224661827087)
+# def test_classify():
+#     assert classify("Добрый день! Не могу войти в свой аккаунт. Что делать?") == ('Учетная запись', 0.7550224661827087)
+#
+#
+# #Добрый день! Не могу войти в свой аккаунт. Что делать?
+# #('Учетная запись', 0.7550224661827087)
