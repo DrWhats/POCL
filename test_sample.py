@@ -1,6 +1,7 @@
 from transformers import pipeline
 import streamlit as st
 import pytest
+import requests
 classifier = pipeline("zero-shot-classification", model="MoritzLaurer/mDeBERTa-v3-base-mnli-xnli")
 
 
@@ -22,6 +23,5 @@ def test_classify():
     answer=classify("Добрый вечер! Не могу зайти в личный кабинет. Предполагаю, что я не зарегистрированный пользователь. Помогите, пожалуйста, разобраться.?")
     assert answer[1]>0.8 and answer[0]=='Учетная запись'
 
-
-# #Добрый день! Не могу войти в свой аккаунт. Что делать?
-# #('Учетная запись', 0.7550224661827087)
+def test_status():
+    assert requests.get('http://localhost:8501').status_code == 200
