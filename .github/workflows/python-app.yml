@@ -46,8 +46,8 @@ jobs:
       - name: Push to space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_USERNAME: hudorojckov.leva@yandex.ru
-          HF_SPACE: https://huggingface.co/spaces/DrWat/POCL
+          HF_USERNAME: DrWat
+          HF_SPACE: huggingface.co/spaces/DrWat/POCL
           TARGET_BRANCH: main
           GIT_USER_EMAIL: GIT_USER_EMAIL
           GIT_USER_NAME: GIT_USER_NAME
