@@ -47,7 +47,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_USERNAME: DrWat  # m3hrdadfi
-          HF_SPACE: https://huggingface.co/spaces/DrWat/POCL  # huggingface.co/spaces/flax-community/chef-transformer
+          HF_SPACE: huggingface.co/spaces/DrWat/POCL  # huggingface.co/spaces/flax-community/chef-transformer
           TARGET_BRANCH: main
           GIT_USER_EMAIL: GIT_USER_EMAIL
           GIT_USER_NAME: GIT_USER_NAME
