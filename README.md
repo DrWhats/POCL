@@ -1,3 +1,14 @@
+---
+title: POCL
+emoji: 😻
+colorFrom: pink
+colorTo: blue
+sdk: streamlit
+sdk_version: 1.15.2
+app_file: app.py
+pinned: false
+---
+
 # POCL - Post Classifier
 
 ## Проект создан студентами Уральского Федерального Университета.
