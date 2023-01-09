@@ -32,4 +32,4 @@ pinned: false
 Дополнительно с помощью Actions реализована автоматическая передача репозитория GitHub в репозиторий HuggingFace Spaces.
 
 ## Пример работы программы
-
+![Иллюстрация к проекту](https://github.com/DrWhats/POCL/blob/main/POCL_example.gif)
